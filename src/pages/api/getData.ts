@@ -3,11 +3,12 @@
 import { Lambda } from "aws-sdk";
 import { NextApiRequest, NextApiResponse } from "next";
 
-const lambda = new Lambda({
-  region: "us-east-1",
-  //   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-  //   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-});
+const lambda = new Lambda();
+//{
+//region: "us-east-1",
+//   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+//   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+//});
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   lambda.invoke(
