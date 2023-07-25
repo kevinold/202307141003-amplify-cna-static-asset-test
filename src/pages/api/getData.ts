@@ -1,5 +1,3 @@
-// Next.js api route to call an AWS Lambda function using the aws-sdk
-
 import { Lambda } from "aws-sdk";
 import { NextApiRequest, NextApiResponse } from "next";
 
