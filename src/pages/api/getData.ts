@@ -1,8 +1,6 @@
 import { Lambda } from "aws-sdk";
 import { NextApiRequest, NextApiResponse } from "next";
 
-// comment
-
 const lambda = new Lambda({
   region: "us-east-1",
   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
